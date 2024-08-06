@@ -9,8 +9,8 @@ const App = () => {
     return (
         <AuthProvider>
             <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/home" element={<HomePage />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="/" element={<ProtectedRoute />}>
                     {/*<Route path="/grupos" element={<GroupsPage />} />*/}
                     {/*<Route*/}
