@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.ant-typography h1.ant-typography { color: #00b96b !important; }
+.ant-typography h2.ant-typography { color: #00b96b !important; }
+.ant-typography h3.ant-typography { color: #00b96b !important; }
+.ant-typography h4.ant-typography { color: #00b96b !important; }
+.ant-typography h5.ant-typography { color: #00b96b !important; }
