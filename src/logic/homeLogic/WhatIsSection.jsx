@@ -9,10 +9,10 @@ export const WhatIsSection = ({ id }) => {
             <div className="max-w-7xl mx-auto">
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <Title level={2} className="flex items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
+                        <Title level={2} className="flex justify-center items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
                             <PuzzleIcon className="mr-2 text-green-500 w-6 h-6 sm:w-8 sm:h-8"/> ¿Qué es EL LOGICABS?
                         </Title>
-                        <Paragraph className="text-sm sm:text-base">
+                        <Paragraph className="text-sm sm:text-base text-justify">
                             EL LOGICABS es un dispositivo innovador compuesto por 8 piezas geométricas
                             obtenidas al seccionar un cuadrado. Estas piezas guardan una proporcionalidad
                             que les permite integrarse en diversas figuras, incluyendo personas,
@@ -22,10 +22,10 @@ export const WhatIsSection = ({ id }) => {
                     </div>
 
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <Title level={2} className="flex items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
+                        <Title level={2} className="flex justify-center items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
                             <BrainIcon className="mr-2 text-purple-500 w-6 h-6 sm:w-8 sm:h-8"/> Metodología de Uso
                         </Title>
-                        <Paragraph className="text-sm sm:text-base">
+                        <Paragraph className="text-sm sm:text-base text-justify">
                             La metodología propuesta para el uso de El Logicabs es aplicable a la mayoría de
                             los estudiantes. Se basa en el desarrollo de procesos mentales a través de desafíos
                             visuales y manipulativos. Esta aproximación reconoce la naturaleza no lineal del
@@ -35,10 +35,10 @@ export const WhatIsSection = ({ id }) => {
                     </div>
 
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <Title level={2} className="flex items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
+                        <Title level={2} className="flex justify-center items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
                             <UserIcon className="mr-2 text-blue-500 w-6 h-6 sm:w-8 sm:h-8"/> Quiénes Somos
                         </Title>
-                        <Paragraph className="text-sm sm:text-base">
+                        <Paragraph className="text-sm sm:text-base text-justify">
                             Nuestro equipo está compuesto por profesionales con amplia experiencia en todos
                             los niveles de educación pública y privada. Hemos sido invitados a formar parte del
                             equipo de investigadores de Matemática Educativa del Cinvestav-IPN en la Ciudad de
@@ -48,10 +48,10 @@ export const WhatIsSection = ({ id }) => {
                     </div>
 
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <Title level={2} className="flex items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
+                        <Title level={2} className="flex justify-center items-center mb-4 text-xl sm:text-2xl lg:text-3xl">
                             <AwardIcon className="mr-2 text-green-500 w-6 h-6 sm:w-8 sm:h-8"/> Situación Actual
                         </Title>
-                        <Paragraph className="text-sm sm:text-base">
+                        <Paragraph className="text-sm sm:text-base text-justify">
                             Actualmente, EL LOGICABS está publicado en Espacenet, una base de datos
                             especializada de patentes desarrollada por la Oficina Europea de Patentes (EPO).
                             Puede acceder a la información pulsando: Fortunato Rolando Meneses Ramos.

@@ -21,10 +21,11 @@ export const HomeLogic = () => {
             <ParticlesUtil />
             <Layout className="relative z-10 min-h-screen bg-transparent">
                 <HeaderSection />
-                <Content className="bg-white bg-opacity-0">
+                <Content className="bg-white bg-opacity-70">
                     <div className="container mx-auto">
                         <div className="w-full">
                             <HeroSection id="hero" />
+                            {/*<FeatureSection id="features" />*/}
                             <WhatIsSection id="what-is" />
                             <HistorySection id="history" />
                             <DiscoverSection id="discover" />

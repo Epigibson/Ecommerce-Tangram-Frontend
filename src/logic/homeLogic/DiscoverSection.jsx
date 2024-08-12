@@ -8,11 +8,10 @@ export const DiscoverSection = ({id}) => {
             <Title
                 level={3}
                 className="mb-4"
-                style={{ color: "#e0e0e0" }}
             >
                 ¿Que descubrimos?
             </Title>
-            <Paragraph className="text-lg mb-4 text-justify text-neutral-300">
+            <Paragraph className="text-lg mb-4 text-justify text-neutral-500">
                 Descubrimos que existen importantes componentes mostrados por los estudiantes, ante los
                 que el profesor o los sistemas educativos han dado por sentados o poco atendidos, además
                 de los ya señalados como sus creencias y actitudes, se suman: interés, atención,

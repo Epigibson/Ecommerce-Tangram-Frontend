@@ -15,6 +15,7 @@ const sections = [
     {key: '7', to: 'short-benefits', label: 'Beneficios'},
     {key: '8', to: 'creator', label: 'Creador'},
     {key: '9', to: 'main-selling', label: 'Comprar'},
+    // {key: '10', to: 'features', label: 'Features'}
 ];
 
 
@@ -44,8 +45,8 @@ export const HeaderSection = () => {
         key: section.key,
         label: (
             <Link
-                style={{color: 'white'}}
-                activeClass="text-primary-950"
+                style={{color: 'black'}}
+                className="cursor-pointer "
                 to={section.to}
                 spy={true}
                 smooth={true}
@@ -59,13 +60,13 @@ export const HeaderSection = () => {
     }));
 
     return (<Header
-            className="flex flex-row left-0 top-0 items-center w-screen bg-secondary-950 shadow-md fixed z-50">
+            className="flex flex-row left-0 top-0 items-center w-screen bg-white shadow-md fixed z-50">
             <div className="flex mr-4">
-                <LoginOutlined className="text-2xl mr-2 text-blue-600"/>
-                <span className="text-xl font-bold text-neutral-100">Logicabs</span>
+                <LoginOutlined className="text-2xl mr-2 text-black"/>
+                <span className="text-xl font-bold text-black">Logicabs</span>
             </div>
             <Menu
-                className="bg-secondary-950"
+                className="bg-white"
                 // theme="dark"
                 mode="horizontal"
                 selectedKeys={[activeKey]}

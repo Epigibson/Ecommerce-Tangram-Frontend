@@ -19,32 +19,32 @@ export const theme = {
     components: {
         Button: {
             // Color primario del botón
-            colorPrimary: '#00b96b',
+            colorPrimary: 'var(--primary-color)',
 
             // Color de fondo del botón
-            colorPrimaryBg: '#00b96b',
+            colorPrimaryBg: 'var(--primary-color)',
 
             // Color del texto del botón
-            colorPrimaryText: '#ffffff',
+            colorPrimaryText: 'var(--primary-color-hover)',
 
             // Estados hover
-            colorPrimaryHover: '#33c88a',
-            colorPrimaryBgHover: '#33c88a',
+            colorPrimaryHover: 'var(--primary-color-hover)',
+            colorPrimaryBgHover: 'var(--primary-color-hover)',
             colorPrimaryTextHover: '#ffffff',
 
             // Estados activos (cuando se presiona el botón)
-            colorPrimaryActive: '#009b59',
-            colorPrimaryBgActive: '#009b59',
+            colorPrimaryActive: 'var(--primary-color-active)',
+            colorPrimaryBgActive: 'var(--primary-color-active)',
             colorPrimaryTextActive: '#ffffff',
 
             // Estados de enfoque (focus)
-            colorPrimaryFocus: '#33c88a',
-            colorPrimaryBgFocus: '#33c88a',
+            colorPrimaryFocus: 'var(--primary-color-active)',
+            colorPrimaryBgFocus: 'var(--primary-color-active)',
             colorPrimaryTextFocus: '#ffffff',
 
             // Borde del botón
-            colorPrimaryBorder: '#00b96b',
-            colorPrimaryBorderHover: '#33c88a',
+            colorPrimaryBorder: 'var(--primary-color-active)',
+            colorPrimaryBorderHover: 'var(--primary-color-active)',
 
             // Sombra del botón (para efecto de elevación)
             boxShadow: '0 2px 0 rgba(0, 185, 107, 0.1)',
@@ -82,11 +82,11 @@ export const theme = {
 
             // Puedes especificar colores para cada nivel de título si lo deseas
             // Estos son ejemplos, ajústalos según tus necesidades
-            h1Color: '#00b96b',  // Color para <Title level={1}>
-            h2Color: '#00b96b',  // Color para <Title level={2}>
-            h3Color: '#00b96b',  // Color para <Title level={3}>
-            h4Color: '#00b96b',  // Color para <Title level={4}>
-            h5Color: '#00b96b',  // Color para <Title level={5}>
+            h1Color: 'var(--primary-4)',  // Color para <Title level={1}>
+            h2Color: 'var(--primary-4)',  // Color para <Title level={2}>
+            h3Color: 'var(--primary-4)',  // Color para <Title level={3}>
+            h4Color: 'var(--primary-4)',  // Color para <Title level={4}>
+            h5Color: 'var(--primary-4)',  // Color para <Title level={5}>
 
             // Tamaños de fuente para diferentes niveles de títulos
             fontSizeHeading1: '38px',

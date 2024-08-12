@@ -1,55 +1,24 @@
-import { Button, Space, Typography } from "antd";
-const { Title, Paragraph } = Typography;
-import image from "../../assets/tangram.jpg";
+import {Button, Image} from 'antd';
+import {ArrowRightOutlined} from '@ant-design/icons';
+import tangram from "../../assets/tangram.jpg";
 import PropTypes from "prop-types";
 
-export const HeroSection = ({ id }) => {
-    return (
-        <div id={id} className="flex flex-col justify-center min-h-screen py-10 px-4 sm:px-6 lg:px-8">
-            <div className="mt-8 bg-gradient-to-r from-neutral-900 to-neutral-950 rounded-lg overflow-hidden shadow-xl">
-                <div className="flex flex-col lg:flex-row items-center p-6 lg:p-12">
-                    <div className="lg:w-1/2 mb-8 lg:mb-0">
-                        <Title level={1} style={{ color: "#e0e0e0" }} className="text-3xl sm:text-4xl lg:text-5xl mb-4">
-                            Logicabs: El Tangram Mejorado
-                        </Title>
-                        <Paragraph className="text-white text-base sm:text-lg mb-6">
-                            Descubre una nueva dimensión en los rompecabezas con Logicabs, la versión
-                            revolucionaria del clásico tangram.
-                        </Paragraph>
-                        <Space direction="vertical" size="middle" className="w-full sm:flex-row sm:space-x-4">
-                            <Button type="primary" size="large" className="w-full sm:w-auto">
-                                Comprar Ahora
-                            </Button>
-                            <Button ghost size="large" className="w-full sm:w-auto">
-                                Más Información
-                            </Button>
-                        </Space>
-                    </div>
-                    <div className="lg:w-1/2 mt-8 lg:mt-0">
-                        <img
-                            src={image}
-                            alt="Logicabs"
-                            className="w-full h-auto max-h-80 object-cover rounded-lg shadow-lg"
-                        />
-                    </div>
-                </div>
-            </div>
-
-            {/* Call to Action */}
-            <section className="mt-12 py-4 md:py-8 lg:py-12 text-center bg-gradient-to-r from-emerald-600 to-purple-600 bg-blend-hue bg-opacity-25">
-                <Title level={2} style={{ color: "#e0e0e0" }} className="text-2xl sm:text-3xl lg:text-4xl mb-4">
-                    ¡Descubre el poder de EL LOGICABS!
-                </Title>
-                <Paragraph className="text-base sm:text-lg mb-6 text-gray-300">
-                    Impulsa el desarrollo cognitivo y el éxito académico de tu hijo.
-                </Paragraph>
-                <Button type="primary" size="large" className="sm:w-auto">
-                    ¡Obtén EL LOGICABS ahora!
-                </Button>
-            </section>
+export const HeroSection = ({id}) => (<div id={id}
+                                           className="flex flex-col md:flex-row items-center justify-between p-8 bg-gradient-to-r from-green-400 to-blue-500 text-white min-h-screen">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+            <h1 className="text-5xl font-bold mb-4">Descubre el Tangram Mejorado</h1>
+            <p className="text-xl mb-6">Potencia tu creatividad y habilidades cognitivas con nuestro innovador
+                diseño</p>
+            <Button type="primary" size="large" className="border-none">
+                Comprar Ahora <ArrowRightOutlined/>
+            </Button>
         </div>
-    );
-};
+        <div className="md:w-1/2 relative">
+            <div className="w-64 h-64 bg-white rounded-full absolute top-0 right-0 animate-pulse"></div>
+            <div className="w-48 h-48 bg-blue-300 rounded-lg absolute bottom-0 left-0 animate-bounce"></div>
+            <Image width={200} src={tangram} className="relative z-10 animate-pulse"/>
+        </div>
+    </div>);
 
 HeroSection.propTypes = {
     id: PropTypes.string.isRequired,

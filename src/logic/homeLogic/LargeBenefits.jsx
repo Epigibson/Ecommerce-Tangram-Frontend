@@ -11,7 +11,7 @@ export const LargeBenefits = ({id}) => {
         <div id={id} className="py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className={"py-4"}>
-                    <Title level={2} style={{ color: "#e0e0e0" }} className="text-center">Beneficios de Largo Alcance</Title>
+                    <Title level={2} className="text-center">Beneficios de Largo Alcance</Title>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     {benefitsLarge.map((benefit, index) => (<div key={index}

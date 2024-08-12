@@ -25,7 +25,7 @@ export const ParticlesUtil = () => {
             options={{
                 background: {
                     color: {
-                        value: "#000000",
+                        value: "#ffffff",
                     },
                 },
                 fpsLimit: 120,
@@ -53,10 +53,10 @@ export const ParticlesUtil = () => {
                 },
                 particles: {
                     color: {
-                        value: "#1e7e4a",
+                        value: "#e2e2e2",
                     },
                     links: {
-                        color: "#004420",
+                        color: "#c8c8c8",
                         distance: 150,
                         enable: true,
                         opacity: 0.7,

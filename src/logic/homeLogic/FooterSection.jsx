@@ -5,7 +5,7 @@ const {Footer} = Layout;
 
 export const FooterSection = () => {
     return (
-        <Footer className="text-center bg-gray-800 text-white py-4">
+        <Footer className="text-center bg-white w-min-screen z-50">
             © 2024 Logicabs. Todos los derechos reservados.
         </Footer>
     )

@@ -12,18 +12,16 @@ export const ShortBenefits = ({ id }) => {
     ];
 
     return (
-        <section id={id} className="px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl bg-neutral-950 rounded-3xl mx-auto align py-12 px-12">
-                <Title level={2} style={{ color: "#e0e0e0" }} className="text-center text-2xl sm:text-3xl lg:text-4xl">
+        <section id={id} className="px-4 sm:px-6 lg:px-8 py-2 sm:py-2 md:py-24 lg:py-32">
+            <div className="max-w-7xl rounded-3xl mx-auto align py-12 px-12">
+                <Title level={2} className="text-center text-2xl sm:text-3xl lg:text-4xl">
                     Beneficios para el estudiante
                 </Title>
-                <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     {benefits.map((benefit, index) => (
-                        <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                            <div className="flex items-start">
-                                <CheckCircleOutlined className="text-green-500 text-xl sm:text-2xl mr-3 mt-1" />
+                        <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <CheckCircleOutlined className="text-green-500 text-2xl mb-2" />
                                 <Paragraph className="font-semibold text-sm sm:text-base">{benefit}</Paragraph>
-                            </div>
                         </div>
                     ))}
                 </div>
